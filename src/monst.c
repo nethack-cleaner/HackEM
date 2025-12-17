@@ -4755,7 +4755,7 @@ struct permonst _mons2[] = {
         M2_STRONG | M2_LORD | M2_GREEDY | M2_JEWELS | M2_COLLECT,
         M3_INFRAVISIBLE | M3_INFRAVISION | M3_TRAITOR, 0, MH_OGRE, 9, CLR_RED),
     MON("ogre mage", S_OGRE,                                    /* Slash'EM */
-        LVL(7, 12, 3, 30, -5), (G_NOHELL | G_GENO),
+        LVL(7, 12, 3, 30, -5), (G_NOHELL | G_GENO | 2),
         A(ATTK(AT_WEAP, AD_PHYS, 2, 6), 
           ATTK(AT_MAGC, AD_SPEL, 0, 0),
           NO_ATTK, NO_ATTK, NO_ATTK, NO_ATTK),
