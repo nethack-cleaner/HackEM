@@ -1978,7 +1978,7 @@ register struct monst *mtmp;
         }
         break;
     case S_OGRE:
-        if (!rn2(mm == PM_OGRE_ROYAL ? 3 : mm == PM_OGRE_NOBLE ? 6 : 12))
+        if (!rn2((mm == PM_OGRE_ROYAL || mm == PM_SHADOW_OGRE) ? 3 : (mm == PM_OGRE_NOBLE || mm == PM_OGRE_MAGE) ? 6 : 12))
             (void) mongets(mtmp, BATTLE_AXE);
         else
             (void) mongets(mtmp, CLUB);
